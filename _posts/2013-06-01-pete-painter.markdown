@@ -3,11 +3,11 @@ layout: post
 title: Pete the Painter - Pete
 author: Bryan Raney
 date:   2013-06-01 7:00:00 -0400
-permalink: /Pete_Painter
+permalink: /pete-painter
 categories: Stories
 excerpt: Friends of the Joy Project have shown Pete tremendous love over the past few years. Pete fought his way out of being homeless and battled alcoholism to be sober since 2013
-image: /assets/img/pete_painter.jpg
-sliderImage: /assets/img/sliderImages/pete_painter.jpg
+image: /assets/img/pete-painter.jpg
+sliderImage: /assets/img/slider-images/pete-painter-slider.jpg
 imageAlt: Pete Painter
 ---
 

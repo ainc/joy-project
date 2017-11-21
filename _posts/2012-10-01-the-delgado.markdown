@@ -3,11 +3,11 @@ layout: post
 title: Family of Nine Assisted by Joy Project
 author: Bryan Raney
 date:   2012-10-01 7:00:00 -0400
-permalink: /The_Delgado
+permalink: /the-delgado
 categories: Stories
 excerpt: A single mother of eight with financial strains and rough living conditions was assisted by numerous volunteers and donations
 image: /assets/img/family.jpg
-sliderImage: /assets/img/sliderImages/family.jpg
+sliderImage: /assets/img/slider-images/family-slider.jpg
 imageAlt: The Delgado Family
 ---
 

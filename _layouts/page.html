@@ -1,18 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
 
-    <!-- StyleSheets -->
-  	<link rel="stylesheet" href="/assets/css/main.css">
-  	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-    <link rel="stylesheet" href="/assets/css/ideal-image-slider.css">
-
-    {% include slider_styles.html %}
-
-  </head>
+  {% include head.html %}\
 
   <body>
-    <link rel="stylesheet" href="/assets/css/ideal-image-slider.css">
+    <!-- <link rel="stylesheet" href="/assets/css/slider/ideal-image-slider.css"> -->
 
     {% include nav.html %}
 
@@ -26,6 +18,25 @@
     {% include footer.html %}
 
     {% include slider_scripts.html %}
+
+
+    <!-- Smooth Scrolling Script -->
+    <script type="text/javascript">
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
 
 
     <!-- Google Analytics JavaScript

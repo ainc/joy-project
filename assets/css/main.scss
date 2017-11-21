@@ -14,15 +14,6 @@
 //	- Style For Within Actual Posts
 // =====================================
 
-
-/* Custom Font-Styles */
-@font-face { font-family: Yanone; src: url('css/font/YanoneKaffeesatzOTF/YanoneKaffeesatz-Regular.otf'); }
-@font-face { font-family: Yanone; font-weight: bold; src: url('css/font/YanoneKaffeesatzOTF/YanoneKaffeesatz-Bold.otf'); }
-@font-face { font-family: Yanone-Light; src: url('css/font/YanoneKaffeesatzOTF/YanoneKaffeesatz-Light.otf'); }
-@font-face { font-family: Yanone-Thin; src: url('css/font/YanoneKaffeesatzOTF/YanoneKaffeesatz-Thin.otf'); }
-@font-face { font-family: Sketch; src: url('css/font/SketchSerif.otf'); }
-
-
 body {
   margin: 0;
 }
@@ -54,7 +45,8 @@ nav.primary {
     margin-top: -85px;
     margin-left: 130px;
     position: fixed;
-    font-family: Yanone;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 400;
   }
 }
 
@@ -64,7 +56,7 @@ nav.primary ul {
   padding: 2.7em 50px 0 0;
   margin: 0;
   font-size: 1.7em;
-  font-family: Yanone, 'Archivo Narrow', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   text-transform: uppercase;
   li {
     position: relative;
@@ -93,25 +85,30 @@ nav.primary ul {
 
 .footer-main {
   clear: both;
-  font-family: Yanone-Light;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 19px;
   background-color: rgb(229, 59, 81);
   display: block;
-  // position: fixed;
   span {
     font-size: 20px;
     color: #fff;
   }
   h3 {
-    font-family: Yanone;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size:1.5em;
     padding: 14px 14px;
     position: relative;
     display: inline-block;
-    text-decoration: none;
-    font-weight: bold;
+    font-weight: 400;
     color: #fff;
-    letter-spacing: 0.08em;
+  }
+  h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-decoration: underline;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
   }
   a {
     color: #fff;
@@ -119,14 +116,24 @@ nav.primary ul {
   }
 }
 
+.footer-widget{
+  padding: 20px;
+  address, span {
+    font-weight: 300;
+    text-decoration: none;
+    font-style: normal;
+  }
+}
+
 #footer-email {
-  font-weight: bold;
+    font-weight: 400;
 }
 
 .footer-list {
   list-style: none;
   color: #fff;
   text-decoration: none;
+  font-weight: 300;
   li {
     padding: 12px;
     margin: 0px;
@@ -161,7 +168,6 @@ nav.primary ul {
     color: #ffeef0;
     border: 1px solid #e53b51;
     padding: 6px 12px;
-    text-transform: uppercase;
     text-decoration: none;
   }
   a:hover {
@@ -181,11 +187,12 @@ nav.primary ul {
 
 // Bottom-most bar with Copyright, Designer, and Developer
 .footer-bottom {
-  background-color: #333333;
+  background-color: #000;
   padding: 14px 14px;
+  font-family: Gill Sans;
   font-size: 14px;
   text-decoration: none;
-  font-weight: bold;
+  // font-weight: bold;
   color: #fff;
   letter-spacing: 0.08em;
 }
@@ -226,7 +233,8 @@ nav.primary ul {
   color: white;
   background-color: rgba(229, 59, 81, 0.8);
   font-size: 40px;
-  font-family: Yanone;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 400;
 }
 
 // Title Heading For Each Section
@@ -239,7 +247,7 @@ nav.primary ul {
     display: inline-block;
     padding-right: 12px;
     padding-left: 12px;
-    font-family: Yanone;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: bold;
     font-size: 4em;
     margin-bottom: -20px;
@@ -259,7 +267,7 @@ nav.primary ul {
     padding-left: 30px;
     text-align: left;
     font-size: 1.9em;
-    font-family: Yanone, Gill Sans, Verdana;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
   }
 }
 
@@ -275,7 +283,7 @@ nav.primary ul {
     padding-left: 30px;
     text-align: left;
     font-size: 1.9em;
-    font-family: Yanone, Gill Sans, Verdana;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
   }
   strong, a {
     color: #e53b51;
@@ -293,46 +301,13 @@ nav.primary ul {
   height: 20%;
 }
 
-.post-display {
-  // margin: 40px auto;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-bottom: 5%;
-  div {
-    height: 30%;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  iframe {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  h5 {
-    margin: 0;
-  }
-  li {
-    list-style-type: none;
-    margin-left: 0;
-    // color: $main;
-    font-size: 1.1rem;
-  }
-  p {
-    margin-right: 5px;
-    // color: $mainAnalogous1;
-  }
-}
-
 // =====================================
 // Style For Within Actual Posts
 // =====================================
 
-.post-title {
-  font-family: Yanone;
-  font-weight: bold;
+.post-title h1 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 700;
   color: #e53b51;
   font-size: 3.0em;
   margin-top: 40px;
@@ -345,6 +320,8 @@ nav.primary ul {
 }
 
 .post-content {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 400;
   display: block;
   font-size: 22px;
 }

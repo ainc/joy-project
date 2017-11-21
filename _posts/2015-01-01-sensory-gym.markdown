@@ -3,11 +3,11 @@ layout: post
 title: Sensory Gym Build Day
 author: Bryan Raney
 date:   2015-01-01 7:00:00 -0400
-permalink: /Sensory_Gym
+permalink: /sensory-gym
 categories: Stories
 excerpt: The Joy Project volunteers built a sensory gym for a family with children with special needs
 image: /assets/img/sensory-gym.jpg
-sliderImage: /assets/img/sliderImages/sensory-gym.jpg
+sliderImage: /assets/img/slider-images/sensory-gym-slider.jpg
 imageAlt: The Sensory Gym
 ---
 
