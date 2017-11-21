@@ -89,6 +89,10 @@ nav.primary ul {
   font-size: 19px;
   background-color: rgb(229, 59, 81);
   display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   span {
     font-size: 20px;
     color: #fff;
@@ -96,7 +100,6 @@ nav.primary ul {
   h3 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size:1.5em;
-    padding: 14px 14px;
     position: relative;
     display: inline-block;
     font-weight: 400;
@@ -117,7 +120,6 @@ nav.primary ul {
 }
 
 .footer-widget{
-  padding: 20px;
   address, span {
     font-weight: 300;
     text-decoration: none;
@@ -135,7 +137,7 @@ nav.primary ul {
   text-decoration: none;
   font-weight: 300;
   li {
-    padding: 12px;
+    padding: 20px;
     margin: 0px;
     background: transparent url('/assets/img/design/border-underline.png') left bottom repeat-x;
     color: #fff;
@@ -164,10 +166,11 @@ nav.primary ul {
 
 // Submit your Nomination Button
 .footer-button {
+  font-weight: 400;
+  text-align: right;
   a {
     color: #ffeef0;
     border: 1px solid #e53b51;
-    padding: 6px 12px;
     text-decoration: none;
   }
   a:hover {
@@ -188,11 +191,12 @@ nav.primary ul {
 // Bottom-most bar with Copyright, Designer, and Developer
 .footer-bottom {
   background-color: #000;
-  padding: 14px 14px;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   font-family: Gill Sans;
   font-size: 14px;
   text-decoration: none;
-  // font-weight: bold;
   color: #fff;
   letter-spacing: 0.08em;
 }
