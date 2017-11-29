@@ -3,14 +3,17 @@ layout: page
 image_sliders:
   - Post_Slider
 image_sliders_load_all: true
+carousel:
+  - image: assets/img/slider-images/build-a-bed-slider.jpg
+  - image: assets/img/slider-images/build-the-hill-slider.jpg
 ---
 
 <div>
-
  	<section id="header">
   		{% include mainHeader.html %}
   </section>
 
+    <br>
 
  	<section id="mission">
   		{% include mission.html %}
@@ -26,6 +29,6 @@ image_sliders_load_all: true
 
     <!-- Latest Stories Slider: -->
   <section id="stories">
-      {% include slider.html selector="Post_Slider" %}
+      {% include flexslider-hardcoded.html %}
   </section>
 </div>

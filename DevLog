@@ -7,10 +7,123 @@ A log of activities as I turned the Continuous Joy Project website from a Native
 ==========================================================
 ==========================================================
 
+======= 11/27/17 =======
+
+== Summary of Work ==
+
+
+== Still Need To Implement ==
+	- Better Post Info:
+		- real dates
+		- more pictures
+		- more info
+		- Change Camping Title or Excerpt
+
+== Thoughts ==
+	- Currently using Skeleton instead of Bootstrap
+		- The bootstrap navBar is probably way nicer than this hardcoded one
+
+== Current Status ==
+	A) Basic Page Format:
+		- _layouts/page.html
+		- _includes/nav.html
+		- _includes/footer.html
+	B) Homepage:
+		- _layouts/homepage.html
+		- _includes/mainHeader.html
+		- _includes/mission.html
+		- _includes/howItWorks.html
+		- _includes/slider.html
+			- _data/sliders.yml
+	C) Posts:
+		- _layouts/post.html
+		1) Karen
+			- made up date 2012-01-01
+		2) The Delgado
+			- made up date 2012-10-01
+		3) Flipping House
+			- made up date 2013-04-01
+		4) Pete Painter
+			- made up date 2013-06-01
+		5) Urban Impact
+		6) Build A Bed
+			- made up date  2014-06-01
+		7) Sensory Gym
+			- Made up date  2015-01-01
+			- Need to Embed Video
+		8) Camping
+			- Needs: Title or Excerpt Change
+			- made up date 2015-06-01
+		9) Build The Hill
+			- made up date  2016-06-01
+	D) Styles:
+		- assets/css/main.scss
+		- images & sliderImages
+		- slider css & js
+	E) Slider: Ideal Image Slider
+		- Needs to be replaced
+		- Freezes on mobile
+		- Can only control height while width is reactive to page size
+
+== Activity Log ==
+
+- Realized Ideal Image Slider needs to be replaced
+	- Freezes on mobile
+	- Can only control height while width is reactive to page size
+
+- Implementing Flexslider in new page
+	A) Add Flexslider js
+		- http://flexslider.woothemes.com/thumbnail-controlnav.html
+		- assets/js/flexslider/jquery.flexslider-min.js
+	B) Add Flexslider css
+	C) include the scripts in the homepage
+		-  _includes/flexslider_scripts.html
+		  <!-- Flexslider -->
+		  {% if page.carousel %}
+		  <!-- Google CDN Hosted jQuery  -->
+		  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		  <!-- Flexslider Library  -->
+		  <script src="/js/flexslider/jquery.flexslider-min.js"></script>
+		  <!-- Initialisation Code  -->
+		  <script src="/js/flexslider/app.js"></script>
+		  {% endif %}
+	D) Initialize the flexslider in assets/js/flexslider/app.js
+		// Initialise FlexSlider for Carousels
+		$(window).load(function() {
+		    $('.flexslider').flexslider({
+		    animation: "fade",
+		    controlNav: true,
+		    directionNav: true,
+		    slideshowSpeed: 5000,
+		    animationSpeed: 600,
+		    touch: true
+		    });
+		});
+	E) include the slider in the homepage
+		- _include/flexslider.html
+		 {% if page.carousel %}
+		  <div class="flexslider">
+		    <ul class="slides">
+		      {% for slides in page.carousel %}
+		      <li>
+		        <img src="{{ slides.image }}">
+		      </li>
+		      {% endfor %}
+		    </ul>
+		  </div>
+		  {% endif %}
+	-
+
+==========================================================
+==========================================================
+
 ======= 11/15/17 =======
 
 == Summary of Work ==
 	- Implemented Slider
+	- Now live at continuousjoy.awesomeinc.org
+	- Full With Borders on Footers
+	- Got Fonts working
 
 == Still Need To Implement ==
 	- Better Post Info:
