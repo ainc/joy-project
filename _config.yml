@@ -10,7 +10,6 @@ sass:
   # style: compressed
 
 plugins:
-  # - jekyll-sitemap
-  # - jekyll-redirect-from
+
 exclude:
   - node_modules
