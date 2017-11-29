@@ -10,9 +10,12 @@ A log of activities as I turned the Continuous Joy Project website from a Native
 ======= 11/27/17 =======
 
 == Summary of Work ==
+	- Realized the Ideal Image Slider is broken on mobile
+	- Implemented FlexSlider
 
 
 == Still Need To Implement ==
+	- Make Flexslider more reactive (instead of the hardcoded versions)
 	- Better Post Info:
 		- real dates
 		- more pictures
@@ -74,7 +77,7 @@ A log of activities as I turned the Continuous Joy Project website from a Native
 - Implementing Flexslider in new page
 	A) Add Flexslider js
 		- http://flexslider.woothemes.com/thumbnail-controlnav.html
-		- assets/js/flexslider/jquery.flexslider-min.js
+		- /assets/js/flexslider/jquery.flexslider-min.js
 	B) Add Flexslider css
 	C) include the scripts in the homepage
 		-  _includes/flexslider_scripts.html
@@ -83,9 +86,9 @@ A log of activities as I turned the Continuous Joy Project website from a Native
 		  <!-- Google CDN Hosted jQuery  -->
 		  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 		  <!-- Flexslider Library  -->
-		  <script src="/js/flexslider/jquery.flexslider-min.js"></script>
+		  <script src="/assets/js/flexslider/jquery.flexslider-min.js"></script>
 		  <!-- Initialisation Code  -->
-		  <script src="/js/flexslider/app.js"></script>
+		  <script src="/assets/js/flexslider/app.js"></script>
 		  {% endif %}
 	D) Initialize the flexslider in assets/js/flexslider/app.js
 		// Initialise FlexSlider for Carousels
@@ -112,7 +115,9 @@ A log of activities as I turned the Continuous Joy Project website from a Native
 		    </ul>
 		  </div>
 		  {% endif %}
-	-
+	**** Removed all use of yaml & liquid tags
+	- Now need to prepend bundle exec onto jekyll serve localhost:4000
+
 
 ==========================================================
 ==========================================================
