@@ -30,24 +30,27 @@ body {
 nav.primary {
   clear: both;
   overflow: hidden;
-  margin: 0 0 1.5em;
-  padding: 0px;
+  // margin: 0 0 1.5em;
+  padding-left: 20%;
+  padding-right: 20%;
   position: fixed;
   top:0px;
   left:0px;
   width: 100%;
   z-index: 99;
-  max-height: 8em;
   background: #333333;
   img {
-    margin-left: 20px;
-    width: 100px;
+    margin: 15px;
+    width: 80px;
     height: auto;
   }
+}
+
+.navbar-brand{
   h1 {
-    font-size: 2.5em;
     color: #fff;
-    margin-top: -85px;
+    font-size: 2.5em;
+    margin-top: -75px;
     margin-left: 130px;
     position: fixed;
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -55,33 +58,9 @@ nav.primary {
   }
 }
 
-nav.primary ul {
-  list-style-type: none;
+.navbar-nav {
   float: right;
-  padding: 2.7em 50px 0 0;
-  margin: 0;
-  font-size: 1.7em;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  text-transform: uppercase;
-  li {
-    position: relative;
-    display: inline-block;
-    padding: 0px 0 10px 0;
-    margin-left: 10px;
-  }
-  li:hover {
-    border-bottom: 4px solid #e9e9e9;
-  }
-  a {
-    padding:5px;
-    text-decoration: none;
-    color: #fff;
-    -webkit-transition: border .5s ease-out;
-  }
-  a.hover {
-    border-bottom: 4px solid #e9e9e9;
-    cursor: pointer;
-  }
+  text-align: right;
 }
 
 // =====================================
@@ -109,6 +88,7 @@ nav.primary ul {
     display: inline-block;
     font-weight: 400;
     color: #fff;
+    // text-align: center;
   }
   h2 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -122,6 +102,11 @@ nav.primary ul {
     color: #fff;
     text-decoration: none;
   }
+}
+
+.footer-width {
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .footer-widget{
@@ -141,6 +126,7 @@ nav.primary ul {
   color: #fff;
   text-decoration: none;
   font-weight: 300;
+  padding: 0px;
   li {
     padding: 20px;
     margin: 0px;
@@ -211,16 +197,21 @@ nav.primary ul {
 // =====================================
 
 .homepage-container {
+  padding-left: 20%;
+  padding-right: 20%;
   margin-bottom: 30px;
   padding-bottom: 30px;
 }
 
 .header-container {
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top: 20px;
   text-align: center;
 }
 
 #header-image {
-  width: 75%;
+  width: 100%;
   height: auto;
   padding: 20px;
   overflow-x: hidden;
@@ -268,8 +259,8 @@ nav.primary ul {
 .mission-section {
   background: #e53b51;
   border-radius: 5px;
-  margin-left: 5%;
-  margin-right: 5%;
+  // margin-left: 5%;
+  // margin-right: 5%;
   p {
     color: #fff;
     padding: 15px;
@@ -284,8 +275,8 @@ nav.primary ul {
   background-color: rgba(120,120,120,0.1);
   padding: 2em;
   border-radius: 10px;
-  margin-left: 5%;
-  margin-right: 5%;
+  // margin-left: 5%;
+  // margin-right: 5%;
   p {
     color: black;
     padding: 15px;

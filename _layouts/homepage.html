@@ -1,11 +1,5 @@
 ---
 layout: page
-image_sliders:
-  - Post_Slider
-image_sliders_load_all: true
-carousel:
-  - image: assets/img/slider-images/build-a-bed-slider.jpg
-  - image: assets/img/slider-images/build-the-hill-slider.jpg
 ---
 
 <div>
@@ -15,20 +9,20 @@ carousel:
 
     <br>
 
- 	<section id="mission">
+ 	<section class="homepage-container" id="mission">
   		{% include mission.html %}
 	</section>
 
   	<br>
 
- 	<section id="howItWorks">
+ 	<section class="homepage-container" id="howItWorks">
   		{% include howItWorks.html %}
 	</section>
 
   	<br>
 
     <!-- Latest Stories Slider: -->
-  <section id="stories">
+  <section class="homepage-container" id="stories">
       {% include flexslider-hardcoded.html %}
   </section>
 </div>
