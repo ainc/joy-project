@@ -1,18 +1,18 @@
 ---
 # Main Sass Stylesheet for Continuous Joy Project
 # Created by Brendan Thompson
-# Built off the Design by Melanie Stoeckle and Huu Nguyen
+# Based on the Design by Melanie Stoeckle and Huu Nguyen
 ---
 
 // =====================================
 // Contents:
 //  - Fonts
 //  - Style For Body
-// 	- Style For NavBar
+//  - Style For NavBar
 //  - Style For Footer
-// 	- Style For Home Page
-// 	- Style For Posts Display
-//	- Style For Within Actual Posts
+//  - Style For Home Page
+//  - Style For Posts Display
+//  - Style For Within Actual Posts
 // =====================================
 
 // =====================================
@@ -51,9 +51,9 @@ nav.primary {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   h1 {
     color: #fff;
-    font-size: 2.5em;
-    margin-top: -75px;
-    margin-left: 130px;
+    font-size: 1.9em;
+    margin-top: -65px;
+    margin-left: 100px;
     position: fixed;
     font-weight: 400;
   }
@@ -203,7 +203,7 @@ nav.primary {
   padding-left: 5%;
   padding-right: 5%;
   margin-bottom: 30px;
-  padding-bottom: 30px;
+  // padding-bottom: 30px;
 }
 
 .header-container {
@@ -251,7 +251,7 @@ nav.primary {
     padding-left: 12px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: bold;
-    // font-size: 4em;
+    font-size: 4em;
     margin-bottom: -20px;
     margin-top: -50px;
     vertical-align: bottom;
@@ -263,7 +263,7 @@ nav.primary {
   border-radius: 5px;
   p {
     color: #fff;
-    padding: 5%;
+    padding: 10px;
     text-align: left;
     font-size: 1.9em;
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -275,7 +275,7 @@ nav.primary {
   border-radius: 10px;
   p {
     color: black;
-    padding: 5%;
+    padding: 10px;
     text-align: left;
     font-size: 1.9em;
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -290,9 +290,9 @@ nav.primary {
 // =====================================
 
 .stories-slider {
-  margin-left: 15%;
-  margin-right: 15%;
-  height: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  // height: 15%;
 }
 
 .flex-caption {
@@ -302,7 +302,7 @@ nav.primary {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   text-align: center;
   color: #fff;
-  font-size: 1.9em;
+  font-size: 1em;
 }
 
 .flex-direction-nav a {

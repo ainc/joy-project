@@ -3,7 +3,7 @@ layout: page
 ---
 
 <div>
- 	<section id="header">
+ 	<section class="homepage-container" id="header">
   		{% include mainHeader.html %}
   </section>
 
@@ -21,8 +21,13 @@ layout: page
 
   	<br>
 
-    <!-- Latest Stories Slider: -->
+  <!-- Latest Stories Slider: -->
   <section class="homepage-container" id="stories">
-      {% include flexslider-hardcoded.html %}
+      <div class="homepage-title">
+        <h3>Latest Stories</h3>
+      </div>
+      <div class="stories-slider">
+        {% include flexslider-hardcoded.html %}
+      </div>
   </section>
 </div>
