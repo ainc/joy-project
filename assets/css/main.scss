@@ -6,7 +6,7 @@
 
 // =====================================
 // Contents:
-//  - Fonts
+//  - Mixins
 //  - Style For Body
 //  - Style For NavBar
 //  - Style For Footer
@@ -14,6 +14,32 @@
 //  - Style For Posts Display
 //  - Style For Within Actual Posts
 // =====================================
+
+// =====================================
+//    Window Size Reactivity
+// =====================================
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$mobile-width: $tablet-width - 1;
+
+@mixin tablet {  /* 768-1023 */
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin mobile {  /* < 768 */
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin desktop { /* > 1024 */
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
 
 // =====================================
 // Style For Body
@@ -30,9 +56,7 @@ body {
 nav.primary {
   clear: both;
   overflow: hidden;
-  // margin: 0 0 1.5em;
   padding-left: 5%;
-  // padding-right: 20%;
   position: fixed;
   top:0px;
   left:0px;
@@ -40,7 +64,6 @@ nav.primary {
   z-index: 99;
   background: #333333;
   img {
-    // margin: 20%;
     width: 80px;
     height: auto;
   }
@@ -56,6 +79,10 @@ nav.primary {
     margin-left: 100px;
     position: fixed;
     font-weight: 400;
+    @include mobile {
+      font-size: 1.2em;
+      margin-top: -60px;
+    }
   }
 }
 
@@ -84,6 +111,9 @@ nav.primary {
   span {
     font-size: 20px;
     color: #fff;
+    @include mobile {
+      font-size: 15px;
+    }
   }
   h3 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -92,7 +122,9 @@ nav.primary {
     display: inline-block;
     font-weight: 400;
     color: #fff;
-    // text-align: center;
+    @include mobile {
+      font-size: 1.2em;
+    }
   }
   h2 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -101,6 +133,9 @@ nav.primary {
     display: inline-block;
     font-weight: 400;
     color: #fff;
+    @include mobile {
+      font-size: 1em;
+    }
   }
   a {
     color: #fff;
@@ -137,6 +172,10 @@ nav.primary {
     margin: 0px;
     background: transparent url('/assets/img/design/border-underline.png') left bottom repeat-x;
     color: #fff;
+    @include mobile {
+      font-size: 15px;
+      padding: 5px;
+    }
   }
   li:before {
     content:"⟩";
@@ -164,6 +203,10 @@ nav.primary {
 .footer-button {
   font-weight: 400;
   text-align: right;
+  @include mobile {
+    font-size: 15px;
+    padding: 5px;
+  }
   a {
     color: #ffeef0;
     border: 1px solid #e53b51;
@@ -203,7 +246,11 @@ nav.primary {
   padding-left: 5%;
   padding-right: 5%;
   margin-bottom: 30px;
-  // padding-bottom: 30px;
+  @include mobile {
+    margin-bottom: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 .header-container {
@@ -215,9 +262,12 @@ nav.primary {
 #header-image {
   width: 100%;
   height: auto;
-  padding: 5%;
+  padding-top: 5%;
   overflow-x: hidden;
   overflow-y: hidden;
+  @include mobile {
+    padding-top: 10%;
+  }
 }
 
 // #header-phrase-container {
@@ -255,6 +305,9 @@ nav.primary {
     margin-bottom: -20px;
     margin-top: -50px;
     vertical-align: bottom;
+    @include mobile {
+      font-size: 3em;
+    }
   }
 }
 
@@ -267,6 +320,9 @@ nav.primary {
     text-align: left;
     font-size: 1.9em;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    @include mobile {
+      font-size: 1.5em;
+    }
   }
 }
 
@@ -279,6 +335,9 @@ nav.primary {
     text-align: left;
     font-size: 1.9em;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    @include mobile {
+      font-size: 1.5em;
+    }
   }
   strong, a {
     color: #e53b51;
@@ -292,7 +351,10 @@ nav.primary {
 .stories-slider {
   margin-left: 20%;
   margin-right: 20%;
-  // height: 15%;
+  @include mobile {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
 }
 
 .flex-caption {
