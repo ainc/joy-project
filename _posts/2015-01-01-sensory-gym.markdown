@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sensory Gym Build Day
-author: Bryan Raney
+author: Brian Raney
 date:   2015-01-01 7:00:00 -0400
 permalink: /sensory-gym
 categories: Stories

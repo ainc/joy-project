@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Leadership Retreat Scholarships for Youth
-author: Bryan Raney
+author: Brian Raney
 date:   2016-06-01 7:00:00 -0400
 permalink: /urban-impact
 categories: Stories

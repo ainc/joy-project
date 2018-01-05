@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Family of Nine Assisted by Joy Project
-author: Bryan Raney
+author: Brian Raney
 date:   2012-10-01 7:00:00 -0400
 permalink: /the-delgado
 categories: Stories

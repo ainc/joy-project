@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Build A Bed
-author: Bryan Raney
+author: Brian Raney
 date:   2014-06-01 7:00:00 -0400
 permalink: /build-a-bed
 categories: Stories

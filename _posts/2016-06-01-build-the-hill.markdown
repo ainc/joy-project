@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Build The Hill
-author: Bryan Raney
+author: Brian Raney
 date:   2016-06-01 7:00:00 -0400
 permalink: /build-the-hill
 categories: Stories

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pete the Painter - Pete
-author: Bryan Raney
+author: Brian Raney
 date:   2013-06-01 7:00:00 -0400
 permalink: /pete-painter
 categories: Stories
