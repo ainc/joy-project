@@ -1,45 +1,41 @@
 Brendan Thompson
 Continuous Joy Jekyll Site DevLog
-Fall 2017
 
 A log of activities as I turned the Continuous Joy Project website from a Native HTML Website into a Jekyll powered site
 
 ==========================================================
 ==========================================================
 
-======= 01/03/18 =======
+======= 01/07/18 =======
 
 == Summary of Work ==
-	- Made reactive to mobile
+	- Made Footer stack on mobile
 
 == Still Need To Implement ==
 	- Flexslider
 		- more dynamic (instead of the hardcoded versions)
-		- Captions
-		-
-	- Change "Love. Serve. Joy" to be part of picture instead of poorly reactive
 	- Better Post Info:
 		- real dates
 		- more pictures
 		- more info
 		- Change Camping Title or Excerpt
+	- More posts
 
 == Thoughts ==
-	- Currently using Skeleton instead of Bootstrap
-		- The bootstrap navBar is probably way nicer than this hardcoded one
+	- Add Post Display to Every Page
 
 == Current Status ==
-	A) Basic Page Format:
-		- _layouts/page.html
+	A) Basic Page Format (_layouts/page.html)
+		- _includes/head.html = <head>
 		- _includes/nav.html
 		- _includes/footer.html
+		- _includes/scripts.html = bootstrap, google analytics, _includes/flexslider_scripts-hardcoded.html
 	B) Homepage:
 		- _layouts/homepage.html
 		- _includes/mainHeader.html
 		- _includes/mission.html
 		- _includes/howItWorks.html
-		- _includes/slider.html
-			- _data/sliders.yml
+		- _includes/flexslider-hardcoded.html
 	C) Posts:
 		- _layouts/post.html
 		1) Karen
@@ -65,10 +61,86 @@ A log of activities as I turned the Continuous Joy Project website from a Native
 		- assets/css/main.scss
 		- images & sliderImages
 		- slider css & js
-	E) Slider: Ideal Image Slider
-		- Needs to be replaced
-		- Freezes on mobile
-		- Can only control height while width is reactive to page size
+	E) Slider: Flexslider
+		- Need switch to reactive versions (use carousel front matter)
+		- _includes/flexslider_scripts.html for the js
+			- hardcoded = does not require a carousel to be declared in the front matter
+		- _includes/flexslider.html
+			- hardcoded = does not get slides from carousel declared in the front matter
+
+== Activity Log ==
+
+- made footer stack on mobile
+	- style="col-sm-4"
+	- Should make the first two 6 and the last one 12
+
+- abstracted scripts out of page layout
+
+======= 01/03/18 =======
+
+== Summary of Work ==
+	- Made reactive to mobile
+
+== Still Need To Implement ==
+	- Flexslider
+		- more dynamic (instead of the hardcoded versions)
+	- Better Post Info:
+		- real dates
+		- more pictures
+		- more info
+		- Change Camping Title or Excerpt
+	- More posts
+
+== Thoughts ==
+	- Add Post Display to Every Page
+
+== Current Status ==
+	A) Basic Page Format (_layouts/page.html)
+		- _includes/head.html = <head> links="bootstrap, flexslider, Yanone-Kaffeesatz google font"
+		- _includes/nav.html
+		- _includes/footer.html
+		- _includes/scripts.html = bootstrap, google analytics, _includes/flexslider_scripts-hardcoded.html
+	B) Homepage:
+		- _layouts/homepage.html
+		- _includes/mainHeader.html
+		- _includes/mission.html
+		- _includes/howItWorks.html
+		- _includes/flexslider-hardcoded.html
+	C) Posts:
+		- _layouts/post.html
+		1) Karen
+			- made up date 2012-01-01
+		2) The Delgado
+			- made up date 2012-10-01
+		3) Flipping House
+			- made up date 2013-04-01
+		4) Pete Painter
+			- made up date 2013-06-01
+		5) Urban Impact
+		6) Build A Bed
+			- made up date  2014-06-01
+		7) Sensory Gym
+			- Made up date  2015-01-01
+			- Need to Embed Video
+		8) Camping
+			- Needs: Title or Excerpt Change
+			- made up date 2015-06-01
+		9) Build The Hill
+			- made up date  2016-06-01
+	D) Styles:
+		- assets/css/main.scss
+		- Yanone Kaffeesatz google font'
+		- Bootstrap
+			- style linked in _includes/head.html
+			- javscript linked in scripts.html
+		- posts have original images & cropped sliderImages (600x400)
+	E) Flexslider
+		- Need switch to reactive versions (use carousel front matter)
+		- stylesheet included in _includes/head.html
+		- _includes/flexslider_scripts.html for the js
+			- hardcoded = does not require a carousel to be declared in the front matter
+		- _includes/flexslider.html
+			- hardcoded = does not get slides from carousel declared in the front matter
 
 == Activity Log ==
 
