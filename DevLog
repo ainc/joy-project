@@ -10,6 +10,7 @@ A log of activities as I turned the Continuous Joy Project website from a Native
 
 == Summary of Work ==
 	- Made Footer stack on mobile
+	- Abstracted scripts out of page layout
 
 == Still Need To Implement ==
 	- Flexslider
@@ -75,6 +76,10 @@ A log of activities as I turned the Continuous Joy Project website from a Native
 	- Should make the first two 6 and the last one 12
 
 - abstracted scripts out of page layout
+	- created _includes/scripts.html
+	- Scripts for flexslider, bootstrap, and google analytics
+
+- Change Camping title to
 
 ======= 01/03/18 =======
 
