@@ -6,6 +6,89 @@ A log of activities as I turned the Continuous Joy Project website from a Native
 ==========================================================
 ==========================================================
 
+======= 01/09/18 =======
+
+== Summary of Work ==
+	- Formatted Style
+
+== Still Need To Implement ==
+	- Flexslider
+		- more dynamic (instead of the hardcoded versions)
+	- Better Post Info:
+		- real dates
+		- more pictures
+		- more info
+		- Change Camping Title or Excerpt
+	- More posts
+
+== Thoughts ==
+	- Add Post Display to Every Page
+
+== Current Status ==
+	A) Basic Page Format (_layouts/page.html)
+		- _includes/head.html = <head>
+		- _includes/nav.html
+		- _includes/footer.html
+		- _includes/scripts.html = bootstrap, google analytics, _includes/flexslider_scripts-hardcoded.html
+	B) Homepage:
+		- _layouts/homepage.html
+		- _includes/mainHeader.html
+		- _includes/mission.html
+		- _includes/howItWorks.html
+		- _includes/flexslider-hardcoded.html
+	C) Posts:
+		- _layouts/post.html
+		1) Karen
+			- made up date 2012-01-01
+		2) The Delgado
+			- made up date 2012-10-01
+		3) Flipping House
+			- made up date 2013-04-01
+		4) Pete Painter
+			- made up date 2013-06-01
+		5) Urban Impact
+		6) Build A Bed
+			- made up date  2014-06-01
+		7) Sensory Gym
+			- Made up date  2015-01-01
+			- Need to Embed Video
+		8) Camping
+			- Needs: Title or Excerpt Change
+			- made up date 2015-06-01
+		9) Build The Hill
+			- made up date  2016-06-01
+	D) Styles:
+		- assets/css/main.scss
+		- images & sliderImages
+		- slider css & js
+	E) Slider: Flexslider
+		- Need switch to reactive versions (use carousel front matter)
+		- _includes/flexslider_scripts.html for the js
+			- hardcoded = does not require a carousel to be declared in the front matter
+		- _includes/flexslider.html
+			- hardcoded = does not get slides from carousel declared in the front matter
+
+== Activity Log ==
+
+- Formatted Style:
+	- Changed Footer stacking on mobile
+		- 2 split-screen and one full-screen centered
+	- Removed Navbar img margin
+	- Decreased Font size
+	- Set Footer-Bottom to gray #333333
+
+- Attempted to Fix Smoothscroll
+	- http://www.dwuser.com/education/content/quick-guide-adding-smooth-scrolling-to-your-webpages/
+	- added "smoothScroll" to <a class="">
+	- Added smoothscroll.js from the tutorial to /assets/js/
+	- Linked to Stylesheet
+		<script type="text/javascript" src="/assets/js/smoothscroll.js"></script>
+		- Using /jquery/2.0.2/ instead of 1.7.1
+	** Not Working
+
+==========================================================
+==========================================================
+
 ======= 01/07/18 =======
 
 == Summary of Work ==

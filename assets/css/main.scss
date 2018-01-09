@@ -66,6 +66,7 @@ nav.primary {
   img {
     width: 80px;
     height: auto;
+    margin-top: 0px;
   }
 }
 
@@ -122,6 +123,7 @@ nav.primary {
     display: inline-block;
     font-weight: 400;
     color: #fff;
+    // margin-bottom: 0px;
     @include mobile {
       font-size: 1.2em;
     }
@@ -150,15 +152,33 @@ nav.primary {
 }
 
 .footer-widget{
+  p {
+    margin-bottom: 0px;
+  }
   address, span {
     font-weight: 300;
     text-decoration: none;
     font-style: normal;
   }
+  @include mobile {
+    text-align: left;
+  }
 }
 
 #footer-email {
     font-weight: 400;
+}
+
+.footer-center{
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.footer-right{
+  @include mobile {
+    text-align: center;
+  }
 }
 
 .footer-list {
@@ -172,6 +192,7 @@ nav.primary {
     margin: 0px;
     background: transparent url('/assets/img/design/border-underline.png') left bottom repeat-x;
     color: #fff;
+    text-align: left;
     @include mobile {
       font-size: 15px;
       padding: 5px;
@@ -202,10 +223,11 @@ nav.primary {
 // Submit your Nomination Button
 .footer-button {
   font-weight: 400;
-  text-align: right;
+  margin-bottom: 10px;
+  padding-top: 5px;
   @include mobile {
     font-size: 15px;
-    padding: 5px;
+    padding-bottom: 20px;
   }
   a {
     color: #ffeef0;
@@ -229,13 +251,37 @@ nav.primary {
 
 // Bottom-most bar with Copyright, Designer, and Developer
 .footer-bottom {
-  background-color: #000;
+  background-color: #333333;
   padding-top: 20px;
   font-family: Gill Sans;
   font-size: 12px;
   text-decoration: none;
   color: #fff;
   letter-spacing: 0.08em;
+  @include mobile {
+    padding-top: 5px;
+  }
+}
+
+.footer-bottom-left{
+  text-align: left;
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.footer-bottom-center{
+  text-align: center;
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.footer-bottom-right{
+  text-align: right;
+  @include mobile {
+    text-align: center;
+  }
 }
 
 // =====================================
@@ -317,12 +363,12 @@ nav.primary {
 
 .mission-section {
   background: #e53b51;
-  border-radius: 5px;
+  border-radius: 10px;
   p {
     color: #fff;
     padding: 10px;
     text-align: left;
-    font-size: 1.9em;
+    font-size: 1.6em;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     @include mobile {
       font-size: 1.5em;
@@ -337,7 +383,7 @@ nav.primary {
     color: black;
     padding: 10px;
     text-align: left;
-    font-size: 1.9em;
+    font-size: 1.6em;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     @include mobile {
       font-size: 1.5em;
