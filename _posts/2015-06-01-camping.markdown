@@ -5,7 +5,7 @@ author: Brian Raney
 date:   2015-06-01 7:00:00 -0400
 permalink: /camping
 categories: Stories
-excerpt: A Cancer survivor gets to experience camping again
+excerpt: Friends of the Joy Project showered a cancer survivor with gift cards, s'more supplies and a fire pit
 image: /assets/img/camping.jpg
 sliderImage: /assets/img/slider-images/camping-slider.jpg
 imageAlt: Camping
