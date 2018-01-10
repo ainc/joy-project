@@ -1,11 +1,14 @@
-{% if page.carousel %}
-  <div class="flexslider">
-    <ul class="slides">
-      {% for slides in page.carousel %}
-      <li>
-        <img src="{{ slides.image }}">
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-{% endif %}
+<div class="row justify-content-center">
+	<div class="col-12">
+		<div class="flexslider">
+			<ul class="slides">
+		  		{% for page in site.posts %}
+		  		<li data-thumb="{{ page.sliderImage }}">
+		    		<img src="{{ page.sliderImage }}">
+		    		<p class="flex-caption">{{ page.excerpt }}</p>
+		 		</li>
+		  		{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>

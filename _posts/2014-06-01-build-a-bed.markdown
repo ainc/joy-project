@@ -7,7 +7,7 @@ permalink: /build-a-bed
 categories: Stories
 excerpt: The Joy Project recruited over 30 Lexington volunteers to donate their Saturday to build brand new beds and deliver them to children in need around Lexington
 image: /assets/img/build-a-bed.jpg
-sliderImage: /assets/img/slider-images/build-a-bed.jpg
+sliderImage: /assets/img/slider-images/build-a-bed-slider.jpg
 imageAlt: Build A Bed
 ---
 
