@@ -4,8 +4,10 @@
 			<ul class="slides">
 		  		{% for page in site.posts %}
 		  		<li data-thumb="{{ page.sliderImage }}">
-		    		<img src="{{ page.sliderImage }}">
-		    		<p class="flex-caption">{{ page.excerpt }}</p>
+		  			<a href="{{ site.url}}{{ page.permalink }}">
+			    		<img src="{{ page.sliderImage }}">
+			    		<p class="flex-caption">{{ page.excerpt }}</p>
+			    	</a>
 		 		</li>
 		  		{% endfor %}
 			</ul>
