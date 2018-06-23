@@ -394,6 +394,56 @@ nav.primary {
   }
 }
 
+.ofd-section {
+  background: #e53b51;
+  border-radius: 10px;
+  text-align: center;
+  p, h1, h2, li, a {
+    clear: both;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+  }
+  p {
+      font-size: 1.6em;
+    @include mobile {
+      font-size: 1.5em;
+    }
+  }
+  /* Create two equal columns that floats next to each other */
+  .column {
+      float: left;
+      width: 33%;
+      padding: 15px;
+      text-align:center;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+}
+
 // =====================================
 // Style For Posts Display
 // =====================================
