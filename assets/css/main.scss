@@ -394,6 +394,24 @@ nav.primary {
   }
 }
 
+.ofd-section {
+  background: #e53b51;
+  border-radius: 10px;
+  text-align: center;
+  p, h1, h2, li, a {
+    clear: both;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+  }
+  p {
+      font-size: 1.6em;
+    @include mobile {
+      font-size: 1.5em;
+    }
+  }
+}
+
 // =====================================
 // Style For Posts Display
 // =====================================
